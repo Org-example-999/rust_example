@@ -4,6 +4,13 @@ on:
 name: Code Coverage
 
 jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v3
+    - name: Build
+      run: cargo build --verbose
+
   lint:
     runs-on: ubuntu-latest
     steps:
