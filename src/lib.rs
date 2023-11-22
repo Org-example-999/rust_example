@@ -4,5 +4,5 @@ fn main(){
 }
 
 pub fn return_hello_string() -> &'static str {
-    return "Other value";
+    return "Hello world!";
 }
